@@ -1,0 +1,38 @@
+.logo {
+  max-width: 25%;
+  margin-inline: auto;
+}
+
+.header {
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sign-up-container {
+  padding-top: 10rem;
+}
+
+.sign-up-btn {
+  --background: #15b0e2;
+}
+
+.terms-conditions {
+  text-align: center;
+  padding-top: 1rem;
+  max-width: 80%;
+  margin-inline: auto;
+}
+
+.sign-up-link {
+  padding-top: 1rem;
+  text-align: center;
+}
