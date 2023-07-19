@@ -1,0 +1,46 @@
+<main class="nutrition">
+  <section class="date-controls">
+    <button (click)="changeDate(-1)">
+      <ion-icon name="chevron-back-outline"></ion-icon>
+    </button>
+    <div class="date">
+      <ion-icon name="calendar" size="large"></ion-icon>
+      <p>{{ currentDate | date }}</p>
+    </div>
+    <button (click)="changeDate(1)">
+      <ion-icon name="chevron-forward-outline"></ion-icon>
+    </button>
+  </section>
+
+  <section class="daily-intake">
+    <div class="calories">
+      <p>{{ dailyIntake.calories }}</p>
+      <ion-progress-bar></ion-progress-bar>
+      <p>Calories</p>
+      <div class="goal-left">
+        <p>Goal:</p>
+        <p>Left:</p>
+      </div>
+    </div>
+    <div class="protein">
+      <p>{{ dailyIntake.protein }}</p>
+      <ion-progress-bar></ion-progress-bar>
+      <p>Protein</p>
+    </div>
+    <div class="carbs">
+      <p>{{ dailyIntake.carbs }}</p>
+      <ion-progress-bar></ion-progress-bar>
+      <p>Carbs</p>
+    </div>
+    <div class="fats">
+      <p>{{ dailyIntake.fats }}</p>
+      <ion-progress-bar></ion-progress-bar>
+      <p>Fats</p>
+    </div>
+  </section>
+
+  <section>
+    <p>Fiber {{ dailyIntake.fiber }}g</p>
+    <p>Water{{ dailyIntake.water }}ml</p>
+  </section>
+</main>

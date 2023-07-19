@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-title {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.flex-row-2 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  max-width: 35px;
+}

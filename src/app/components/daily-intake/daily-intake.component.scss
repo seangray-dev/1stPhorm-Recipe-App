@@ -1,0 +1,29 @@
+.nutrition {
+  margin: 1rem;
+}
+
+.date-controls {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.daily-intake {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.daily-intake > div {
+  flex: 1;
+}
+
+.goal-left {
+  font-size: 0.75rem;
+}
