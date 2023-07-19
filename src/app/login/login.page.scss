@@ -1,0 +1,34 @@
+.logo {
+  max-width: 25%;
+  margin-inline: auto;
+}
+
+.header {
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-in-container {
+  padding-top: 10rem;
+}
+
+.sign-in-button {
+  --background: #15b0e2;
+}
+
+.forgot-password {
+  text-align: right;
+  display: block;
+  padding-top: 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.sign-up-link {
+  padding-top: 1rem;
+  text-align: center;
+}

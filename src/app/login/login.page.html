@@ -1,0 +1,29 @@
+<ion-content [fullscreen]="true">
+  <div class="flex-center">
+    <div>
+      <ion-img
+        class="logo"
+        src="assets/images/logo-white-blue-bg.png"
+        alt="1st Phorm Logo"
+      ></ion-img>
+      <h1 class="header">Sign In</h1>
+      <ion-card-content class="form-container">
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input type="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Password</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+        <a href class="forgot-password">Forgot Password?</a>
+        <div class="sign-in-container">
+          <ion-button expand="full" class="sign-in-button">Sign In</ion-button>
+          <div class="sign-up-link">
+            Don't have an account? <a href="#">Sign Up</a>
+          </div>
+        </div>
+      </ion-card-content>
+    </div>
+  </div>
+</ion-content>
