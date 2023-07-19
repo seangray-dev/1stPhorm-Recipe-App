@@ -1,0 +1,38 @@
+<section class="card">
+  <div class="container">
+    <div class="flex-col-1">
+      <ion-img
+        class="logo"
+        src="assets/images/logo-white-blue-bg.png"
+        alt="1st Phorm Logo"
+      ></ion-img>
+    </div>
+    <div class="flex-col-2">
+      <div class="flex-col-2__header">
+        <h2>My Transformation</h2>
+        <ion-button fill="clear" (click)="toggleDays()">
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </ion-button>
+      </div>
+      <ion-progress-bar [value]="currentDay / 56"></ion-progress-bar>
+      <p class="challenge">2023 Summer Challenge</p>
+    </div>
+  </div>
+  <div *ngIf="showDays">
+    <div *ngFor="let week of weeks">
+      <div class="week">
+        <div
+          *ngFor="let day of week"
+          class="day"
+          [ngClass]="{
+            'past-day': day < currentDay,
+            'current-day': day == currentDay,
+            'future-day': day > currentDay
+          }"
+        >
+          {{ day }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
